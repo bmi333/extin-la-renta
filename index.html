@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extintores Vía La Renta | Recarga de Extintores en Santander</title>
+    <!-- Tailwind CSS para un diseño moderno y rápido -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos atractivos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        /* Animación de pulso para el botón de WhatsApp */
+        @keyframes pulse-whatsapp {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        }
+        .btn-whatsapp {
+            animation: pulse-whatsapp 2s infinite;
+        }
+        /* Animación del camión de servicio */
+        @keyframes drive {
+            0% { transform: translateX(-20px); opacity: 0; }
+            50% { opacity: 1; }
+            100% { transform: translateX(20px); opacity: 0; }
+        }
+        .moving-truck {
+            animation: drive 3s ease-in-out infinite;
+        }
+        /* Efecto Hover para Tarjetas */
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/573017698939?text=Hola,%20necesito%20información%20sobre%20la%20recarga%20de%20extintores" 
+       target="_blank" 
+       class="btn-whatsapp fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl z-50 flex items-center justify-center text-2xl transition-transform hover:scale-110">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Encabezado / Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-40 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <i class="fas fa-fire-extinguisher text-red-600 text-3xl animate-bounce"></i>
+                <span class="text-xl font-extrabold text-gray-900 tracking-tight">Extintores <span class="text-red-600">Vía La Renta</span></span>
+            </a>
+            <nav class="hidden md:flex space-x-8 font-semibold">
+                <a href="#inicio" class="text-gray-600 hover:text-red-600 transition-colors">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-red-600 transition-colors">Servicios</a>
+                <a href="#tipos" class="text-gray-600 hover:text-red-600 transition-colors">Tipos de Extintores</a>
+                <a href="#pagos" class="text-gray-600 hover:text-red-600 transition-colors">Métodos de Pago</a>
+            </nav>
+            <a href="https://wa.me/573017698939" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform transform hover:scale-105">
+                <i class="fas fa-phone-alt mr-2"></i> Cotizar Ya
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección Hero (Inicio) -->
+    <section id="inicio" class="relative bg-gradient-to-br from-gray-900 via-gray-800 to-red-900 text-white py-24 md:py-32 px-6 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[url('https://images.unsplash.com/photo-1599740831464-59be4a82e52e?auto=format&fit=crop&q=80')] bg-cover bg-center"></div>
+        <div class="container mx-auto relative z-10 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span class="bg-red-600 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block animate-pulse">
+                    <i class="fas fa-map-marker-alt mr-1"></i> Santander, Colombia
+                </span>
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+                    Recarga y Mantenimiento de <span class="text-red-500">Extintores</span>
+                </h1>
+                <p class="text-lg text-gray-300 max-w-lg">
+                    Protegemos tu hogar, empresa o vehículo con recargas bajo las normas técnicas colombianas. Seguridad, rapidez y confianza en todo Santander.
+                </p>
+                <div class="pt-4 flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/573017698939" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold text-center py-4 px-8 rounded-xl shadow-xl transition-all transform hover:-translate-y-1">
+                        <i class="fab fa-whatsapp mr-2 text-xl"></i> Pedir Servicio a Domicilio
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:flex justify-center relative">
+                <!-- Icono grande animado en el Hero -->
+                <div class="bg-white/10 p-12 rounded-full border border-white/20 backdrop-blur-sm animate-pulse">
+                    <i class="fas fa-shield-alt text-red-500 text-[150px]"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de Ventaja / Animación de Envío -->
+    <div class="bg-red-600 text-white py-3 overflow-hidden shadow-inner">
+        <div class="container mx-auto px-6 flex justify-between items-center text-sm font-bold tracking-wide uppercase">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-truck moving-truck"></i>
+                <span>Servicio a domicilio en todo Santander</span>
+            </div>
+            <div class="hidden sm:flex items-center space-x-2">
+                <i class="fas fa-check-circle"></i>
+                <span>Cumplimiento Normativo Vigente</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-20 px-6 container mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">Nuestros Servicios Especializados</h2>
+            <p class="text-gray-600 mt-4">En <strong>Extintores Vía La Renta</strong> garantizamos que tus equipos estén 100% operativos cuando más lo necesites.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Servicio 1 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover transition-all duration-300 text-center">
+                <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-sync text-red-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Recarga de Extintores</h3>
+                <p class="text-gray-600 text-sm">Vaciado, limpieza y recarga precisa con el agente extintor correspondiente según la normatividad.</p>
+            </div>
+            <!-- Servicio 2 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover transition-all duration-300 text-center">
+                <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-wrench text-red-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Mantenimiento Completo</h3>
+                <p class="text-gray-600 text-sm">Pruebas de presión, cambio de válvulas, mangueras y manómetros defectuosos para máxima seguridad.</p>
+            </div>
+            <!-- Servicio 3 -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover transition-all duration-300 text-center">
+                <div class="bg-red-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <i class="fas fa-clipboard-check text-red-600 text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Señalización y Asesoría</h3>
+                <p class="text-gray-600 text-sm">Venta e instalación de la señalización reglamentaria exigida por los entes de control y bomberos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Segmentada de Tipos de Extintores -->
+    <section id="tipos" class="bg-gray-100 py-20 px-6">
+        <div class="container mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">¿Qué tipo de extintor necesitas recargar?</h2>
+                <p class="text-gray-600 mt-4">Segmentamos nuestro servicio según el tipo de fuego y la necesidad específica de tu sector.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Multipropósito abc -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center">
+                    <span class="font-black text-4xl text-yellow-500 block mb-2">ABC</span>
+                    <h4 class="font-bold text-lg mb-2">Multipropósito (Polvo Químico)</h4>
+                    <p class="text-xs text-gray-500">Ideal para hogares, oficinas, locales comerciales y vehículos.</p>
+                </div>
+                <!-- Solkaflam -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center">
+                    <span class="font-black text-4xl text-green-600 block mb-2">Agente Limpio</span>
+                    <h4 class="font-bold text-lg mb-2">Solkaflam / HFC</h4>
+                    <p class="text-xs text-gray-500">Para equipos electrónicos, computadores y salas de servidores.</p>
+                </div>
+                <!-- CO2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center">
+                    <span class="font-black text-4xl text-red-600 block mb-2">CO₂</span>
+                    <h4 class="font-bold text-lg mb-2">Dióxido de Carbono</h4>
+                    <p class="text-xs text-gray-500">Especial para fuegos eléctricos y áreas industriales de alta tensión.</p>
+                </div>
+                <!-- Agua / Tipo K -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-gray-200 text-center">
+                    <span class="font-black text-4xl text-blue-500 block mb-2">Tipo K</span>
+                    <h4 class="font-bold text-lg mb-2">Cocinas Comerciales</h4>
+                    <p class="text-xs text-gray-500">Para restaurantes, freidoras y manejo de aceites vegetales o grasas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Pasarela de Pagos (PSE) -->
+    <section id="pagos" class="py-20 px-6 container mx-auto">
+        <div class="bg-gradient-to-r from-blue-700 to-blue-900 rounded-3xl p-8 md:p-12 text-white shadow-xl relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 opacity-10">
+                <i class="fas fa-credit-card text-[250px]"></i>
+            </div>
+            <div class="max-w-3xl relative z-10">
+                <div class="flex items-center space-x-3 mb-4">
+                    <span class="bg-yellow-400 text-blue-900 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Facilidad Total</span>
+                </div>
+                <h2 class="text-3xl md:text-5xl font-black mb-6">¡Recibe tu servicio y paga en línea con PSE!</h2>
+                <p class="text-lg text-blue-100 mb-8 max-w-xl">
+                    Pensando en tu comodidad y seguridad, en <strong>Extintores Vía La Renta</strong> puedes realizar tus pagos de manera ágil y digital desde cualquier banco en Colombia a través de <strong>PSE</strong>. Sin complicaciones y con certificación inmediata.
+                </p>
+                <div class="flex flex-wrap items-center gap-6">
+                    <!-- Representación visual de PSE -->
+                    <div class="bg-white px-6 py-3 rounded-xl inline-flex items-center shadow-md transform hover:scale-105 transition-transform">
+                        <span class="text-blue-900 font-extrabold text-2xl tracking-tighter">Paga con <span class="text-yellow-500">P</span><span class="text-blue-500">S</span><span class="text-magenta-500 text-red-500">E</span></span>
+                    </div>
+                    <div class="text-sm text-blue-200 flex items-center gap-2">
+                        <i class="fas fa-lock text-emerald-400"></i> Transacción 100% Protegida y Segura
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Pie de página) -->
+    <footer class="bg-gray-900 text-gray-400 py-12 px-6 border-t border-gray-800">
+        <div class="container mx-auto grid md:grid-cols-3 gap-8 items-center">
+            <div>
+                <span class="text-white text-lg font-bold">Extintores Vía La Renta</span>
+                <p class="text-sm mt-2">Tu aliado en seguridad contra incendios en el departamento de Santander.</p>
+            </div>
+            <div class="text-center">
+                <span class="text-white block mb-2 font-semibold">Contacto Directo</span>
+                <a href="tel:+573017698939" class="text-red-500 font-bold text-xl hover:underline"><i class="fas fa-phone-alt mr-2"></i>301 769 8939</a>
+            </div>
+            <div class="md:text-right">
+                <span class="text-white block mb-1 font-semibold">Ubicación</span>
+                <p class="text-sm"><i class="fas fa-map-marker-alt text-red-500 mr-2"></i>Santander, Colombia</p>
+                <p class="text-xs text-gray-600 mt-4">&copy; 2026 Extintores Vía La Renta. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
